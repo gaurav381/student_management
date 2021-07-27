@@ -1,0 +1,79 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Student Management System | Dashboard</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <link rel="icon" href="data:image/png;base64,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" type="image/gif" sizes="16x16">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="{% static "fontawesome-free/css/all.min.css" %}">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bbootstrap 4 -->
+  <link rel="stylesheet" href="{% static 'tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css' %}">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="{% static "icheck-bootstrap/icheck-bootstrap.min.css" %}">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="{% static "jqvmap/jqvmap.min.css" %}">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="{% static 'dist/css/adminlte.min.css'  %}">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="{% static "overlayScrollbars/css/OverlayScrollbars.min.css" %}">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="{% static "daterangepicker/daterangepicker.css" %}">
+  <!-- summernote -->
+  <link rel="stylesheet" href="{% static "summernote/summernote-bs4.css" %}">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+
+</head>
+
+
+
+{% block content %}
+
+
+{% endblock %}
+
+<!-- jQuery -->
+<script src="{% static "jquery/jquery.min.js"  %}"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="{% static "jquery-ui/jquery-ui.min.js"  %}"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="{% static "bootstrap/js/bootstrap.bundle.min.js"  %}"></script>
+<!-- ChartJS -->
+<script src="{% static "chart.js/Chart.min.js"  %}"></script>
+<!-- Sparkline -->
+<script src="{% static "sparklines/sparkline.js"  %}"></script>
+<!-- JQVMap -->
+<script src="{% static "jqvmap/jquery.vmap.min.js"  %}"></script>
+<script src="{% static "jqvmap/maps/jquery.vmap.usa.js"  %}"></script>
+<!-- jQuery Knob Chart -->
+<script src="{% static "jquery-knob/jquery.knob.min.js"  %}"></script>
+<!-- daterangepicker -->
+<script src="{% static "moment/moment.min.js"  %}"></script>
+<script src="{% static "daterangepicker/daterangepicker.js"  %}"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="{% static "tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"  %}"></script>
+<!-- Summernote -->
+<script src="{% static "summernote/summernote-bs4.min.js"  %}"></script>
+<!-- overlayScrollbars -->
+<script src="{% static "overlayScrollbars/js/jquery.overlayScrollbars.min.js"  %}"></script>
+<!-- AdminLTE App -->
+<script src="{% static 'dist/js/adminlte.js'  %}"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="{% static 'dist/js/pages/dashboard.js'  %}"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="{% static 'dist/js/demo.js'  %}"></script>
+</body>
+</html>
